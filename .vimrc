@@ -21,6 +21,9 @@ Plugin 'gmarik/Vundle.vim'
 " Auto Indentation
 Plugin 'vim-scripts/indentpython.vim'
 
+" YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+
 " Whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
@@ -43,10 +46,15 @@ syntax on
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 " File Tree
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Super Searching As expected, press Ctrl-P to enable the search and then just
 " start typing.
@@ -75,8 +83,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Enable folding
-" set foldmethod=indent
-" set foldlevel=99
+set foldmethod=indent
+set foldlevel=99
 
 " Enable folding with the spacebar
 " nnoremap <space> za
@@ -88,3 +96,8 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
+" Powerline settings
+execute pathogen#infect()
+syntax on
+filetype plugin indent on

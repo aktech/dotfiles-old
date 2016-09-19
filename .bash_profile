@@ -7,7 +7,7 @@ export PATH="/Users/aktech/anaconda/bin:$PATH"
 ##
 
 # MacPorts Installer addition on 2016-05-27_at_20:47:57: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 
@@ -41,6 +41,8 @@ alias gcm='git checkout master'
 alias gp='git push'
 alias ga='git add .'
 alias gpum='git pull upstream master'
+alias gphm='git push heroku master'
+alias ho='heroku open'
 alias gpom='git push origin master'
 alias py2='python2'
 alias py3='python3'
@@ -56,3 +58,12 @@ alias run_dturm='python dev_appserver.py dturm/'
 alias update_dturm2='python appcfg.py -A dturm2 update dturm2/'
 alias run_dturm2='python dev_appserver.py dturm2/'
 alias cr='g++ -o t t.cpp;./t;rm t'
+
+# added by Anaconda3 4.0.0 installer
+export PATH="//anaconda/bin:$PATH"
+
+# added by Anaconda2 4.0.0 installer
+export PATH="/Users/aktech/anaconda/bin:$PATH"
+
+# added by Anaconda3 4.0.0 installer
+export PATH="/Users/aktech/anaconda/bin:$PATH"
